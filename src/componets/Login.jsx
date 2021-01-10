@@ -4,7 +4,7 @@ function Login(props) {
   return (
     <div>
       <div>
-        <h2>Sign in</h2>
+        {props.display?<h1>Login</h1>:<h1>Enter your correct details</h1>}
         <form onSubmit={props.handleSubmit}>
           <div>
             <input
